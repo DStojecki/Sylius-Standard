@@ -5,6 +5,7 @@ const syliusBundles = path.resolve(__dirname, 'vendor/sylius/sylius/src/Sylius/B
 const uiBundleScripts = path.resolve(syliusBundles, 'UiBundle/Resources/private/js/');
 const uiBundleResources = path.resolve(syliusBundles, 'UiBundle/Resources/private/');
 
+
 // Shop config
 Encore
   .setOutputPath('public/build/shop/')
