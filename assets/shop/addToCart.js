@@ -6,7 +6,7 @@ $.fn.extend({
     addToCart() {
     const element = this;
     const url = $(element).attr('action');
-    console.log(url)
+    
     const validationElement = $('#sylius-cart-validation-error');
     const flash = document.getElementById('postive-pop-up')
     const cart = document.getElementById('sylius-cart-button')
@@ -26,9 +26,7 @@ $.fn.extend({
         validationElement.addClass('hidden');
         flash.style.display = "flex"
         cart.innerHTML = "<i class='cart icon'></i><span id='sylius-cart-total'>Item added!</span>"
-        console.log("działa")
-
-    },
+      },
 
       onFailure(response) {
         validationElement.removeClass('hidden');
